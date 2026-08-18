@@ -107,6 +107,13 @@ the value read from it is right. The cost saving is defensible anyway, and for a
 second reason: skipping the critic is cheap largely because the critic is finding so little
 (precision 0.250, recall 0.022).
 
+**The validation funnel is at parity with a free policy.** The funnel routes 13.5% of fields to a
+human and catches 29.9% of all errors. Ranking by confidence alone and reviewing the bottom 13.5%
+catches 31.1% — slightly more, at no cost, while the funnel's critic accounts for $3.82 of the
+$6.95 bill. The funnel produces evidence spans and reasons a confidence sort can't, so a reviewer
+sees *why* a field was flagged. But measured purely on errors caught per dollar, this layer has not
+yet earned its cost, and that's worth knowing before scaling it to millions of calls.
+
 **Schema alignment can flatter itself.** Discovered columns are matched to gold by mutual
 information, which has a failure mode: a column the extractor reads *badly* carries little
 information about the truth, so a purely evidence-based matcher would drop it as unmapped and

@@ -11,3 +11,6 @@ data/corpus/
 # Run artifacts ARE committed on purpose: the demo must work with no API key.
 # (see artifacts/README.md)
 !artifacts/
+
+# Written for my own reference, deliberately not published.
+DECISIONS.md
