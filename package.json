@@ -1,0 +1,32 @@
+{
+  "name": "callgraph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A layered agent system that discovers structure in raw call transcripts, extracts it under a critic, and proves it with an eval harness.",
+  "scripts": {
+    "corpus": "tsx src/cli/gen-corpus.ts",
+    "pipeline": "tsx src/cli/run-pipeline.ts",
+    "eval": "tsx src/cli/run-eval.ts",
+    "all": "npm run corpus && npm run pipeline && npm run eval",
+    "typecheck": "tsc --noEmit",
+    "dev": "vite --config web/vite.config.ts",
+    "build": "tsc --noEmit && vite build --config web/vite.config.ts",
+    "preview": "vite preview --config web/vite.config.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.117.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vite": "^6.3.0"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Corpus is regenerable from a seed — keep the repo small, keep the seed in config.
+data/corpus/
+
+# Run artifacts ARE committed on purpose: the demo must work with no API key.
+# (see artifacts/README.md)
+!artifacts/

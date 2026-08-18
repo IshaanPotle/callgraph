@@ -1,0 +1,423 @@
+{
+  "report": {
+    "runId": "run_2026-08-18T01-13-21-791Z",
+    "provider": "stub",
+    "callsScored": 240,
+    "alignment": [
+      {
+        "discovered": "product_line",
+        "gold": "productLine",
+        "method": "exact",
+        "score": 0.9910180221472645
+      },
+      {
+        "discovered": "sentiment",
+        "gold": "sentiment",
+        "method": "exact",
+        "score": 0.4615385750828606
+      },
+      {
+        "discovered": "end_state",
+        "gold": "outcome",
+        "method": "similarity",
+        "score": 0.6880076234932472
+      },
+      {
+        "discovered": "blocker",
+        "gold": "objection",
+        "method": "similarity",
+        "score": 0.7686812674243715
+      },
+      {
+        "discovered": "disclosure_given",
+        "gold": "disclosureGiven",
+        "method": "exact",
+        "score": 0.06123862904323862
+      },
+      {
+        "discovered": "followup_date",
+        "gold": "commitmentDate",
+        "method": "similarity",
+        "score": 0.9136167529885478
+      },
+      {
+        "discovered": "amount_usd",
+        "gold": "dollarAmount",
+        "method": "similarity",
+        "score": 0.9511984862457336
+      },
+      {
+        "discovered": "call_reason",
+        "gold": "reason",
+        "method": "similarity",
+        "score": 0.987729329808206
+      },
+      {
+        "discovered": "identity_check",
+        "gold": null,
+        "method": "unmapped",
+        "score": 0
+      },
+      {
+        "discovered": "competitor_named",
+        "gold": "competitor",
+        "method": "similarity",
+        "score": 0.9331062430847723
+      },
+      {
+        "discovered": "hold_event",
+        "gold": null,
+        "method": "unmapped",
+        "score": 0
+      },
+      {
+        "discovered": "line_quality",
+        "gold": null,
+        "method": "unmapped",
+        "score": 0
+      },
+      {
+        "discovered": "audio_gap",
+        "gold": null,
+        "method": "unmapped",
+        "score": 0
+      },
+      {
+        "discovered": "escalation_requested",
+        "gold": "escalationRequested",
+        "method": "exact",
+        "score": 0.5042206065047058
+      }
+    ],
+    "perField": [
+      {
+        "gold": "reason",
+        "discovered": "call_reason",
+        "support": 240,
+        "correct": 237,
+        "falsePositive": 0,
+        "falseNegative": 1,
+        "wrongValue": 2,
+        "precision": 0.9916317991631799,
+        "recall": 0.9875,
+        "f1": 0.989561586638831
+      },
+      {
+        "gold": "productLine",
+        "discovered": "product_line",
+        "support": 240,
+        "correct": 238,
+        "falsePositive": 0,
+        "falseNegative": 1,
+        "wrongValue": 1,
+        "precision": 0.99581589958159,
+        "recall": 0.9916666666666667,
+        "f1": 0.9937369519832986
+      },
+      {
+        "gold": "outcome",
+        "discovered": "end_state",
+        "support": 240,
+        "correct": 162,
+        "falsePositive": 0,
+        "falseNegative": 74,
+        "wrongValue": 4,
+        "precision": 0.9759036144578314,
+        "recall": 0.675,
+        "f1": 0.7980295566502463
+      },
+      {
+        "gold": "objection",
+        "discovered": "blocker",
+        "support": 109,
+        "correct": 106,
+        "falsePositive": 60,
+        "falseNegative": 0,
+        "wrongValue": 3,
+        "precision": 0.6272189349112426,
+        "recall": 0.9724770642201835,
+        "f1": 0.7625899280575539
+      },
+      {
+        "gold": "competitor",
+        "discovered": "competitor_named",
+        "support": 62,
+        "correct": 58,
+        "falsePositive": 0,
+        "falseNegative": 4,
+        "wrongValue": 0,
+        "precision": 1,
+        "recall": 0.9354838709677419,
+        "f1": 0.9666666666666666
+      },
+      {
+        "gold": "commitmentDate",
+        "discovered": "followup_date",
+        "support": 136,
+        "correct": 114,
+        "falsePositive": 0,
+        "falseNegative": 11,
+        "wrongValue": 11,
+        "precision": 0.912,
+        "recall": 0.8382352941176471,
+        "f1": 0.8735632183908045
+      },
+      {
+        "gold": "dollarAmount",
+        "discovered": "amount_usd",
+        "support": 110,
+        "correct": 78,
+        "falsePositive": 0,
+        "falseNegative": 11,
+        "wrongValue": 21,
+        "precision": 0.7878787878787878,
+        "recall": 0.7090909090909091,
+        "f1": 0.7464114832535885
+      },
+      {
+        "gold": "sentiment",
+        "discovered": "sentiment",
+        "support": 240,
+        "correct": 168,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "wrongValue": 72,
+        "precision": 0.7,
+        "recall": 0.7,
+        "f1": 0.7
+      },
+      {
+        "gold": "disclosureGiven",
+        "discovered": "disclosure_given",
+        "support": 240,
+        "correct": 178,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "wrongValue": 62,
+        "precision": 0.7416666666666667,
+        "recall": 0.7416666666666667,
+        "f1": 0.7416666666666667
+      },
+      {
+        "gold": "escalationRequested",
+        "discovered": "escalation_requested",
+        "support": 240,
+        "correct": 220,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "wrongValue": 20,
+        "precision": 0.9166666666666666,
+        "recall": 0.9166666666666666,
+        "f1": 0.9166666666666666
+      }
+    ],
+    "macroF1": 0.8488892724974322,
+    "microAccuracy": 0.8395261173936457,
+    "preValidationAccuracy": 0.8491666666666666,
+    "postValidationAccuracy": 0.8508333333333333,
+    "calibration": {
+      "bins": [
+        {
+          "lo": 0,
+          "hi": 0.1,
+          "count": 27,
+          "meanConfidence": 0.05185185185185187,
+          "accuracy": 0.4444444444444444
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 66,
+          "meanConfidence": 0.15803030303030297,
+          "accuracy": 0.3181818181818182
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 90,
+          "meanConfidence": 0.2208888888888887,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 72,
+          "meanConfidence": 0.36208333333333337,
+          "accuracy": 0.9166666666666666
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 197,
+          "meanConfidence": 0.4556852791878166,
+          "accuracy": 0.7208121827411168
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "count": 287,
+          "meanConfidence": 0.5482578397212541,
+          "accuracy": 0.8257839721254355
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 732,
+          "meanConfidence": 0.6535928961748637,
+          "accuracy": 0.8579234972677595
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 329,
+          "meanConfidence": 0.745775075987842,
+          "accuracy": 0.9270516717325228
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 198,
+          "meanConfidence": 0.8429797979797978,
+          "accuracy": 0.9848484848484849
+        },
+        {
+          "lo": 0.9,
+          "hi": 1,
+          "count": 369,
+          "meanConfidence": 0.9582926829268335,
+          "accuracy": 0.9105691056910569
+        }
+      ],
+      "ece": 0.20750416666666727
+    },
+    "critic": {
+      "truePositive": 8,
+      "falsePositive": 24,
+      "falseNegative": 354,
+      "trueNegative": 2014,
+      "precision": 0.25,
+      "recall": 0.022099447513812154,
+      "deterministicShare": 0.8125
+    },
+    "routing": [
+      {
+        "reviewShare": 0,
+        "errorsCaught": 0,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.8508333333333333
+      },
+      {
+        "reviewShare": 0.05,
+        "errorsCaught": 69,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.8732456140350877
+      },
+      {
+        "reviewShare": 0.1,
+        "errorsCaught": 85,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.8736111111111111
+      },
+      {
+        "reviewShare": 0.15,
+        "errorsCaught": 122,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.884313725490196
+      },
+      {
+        "reviewShare": 0.2,
+        "errorsCaught": 143,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.8880208333333334
+      },
+      {
+        "reviewShare": 0.3,
+        "errorsCaught": 190,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.9
+      },
+      {
+        "reviewShare": 0.4,
+        "errorsCaught": 223,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.90625
+      },
+      {
+        "reviewShare": 0.5,
+        "errorsCaught": 266,
+        "errorsTotal": 358,
+        "autoAccuracy": 0.9233333333333333
+      }
+    ]
+  },
+  "policy": {
+    "channels": [
+      {
+        "decidedBy": "deterministic",
+        "shipped": 1160,
+        "errors": 197,
+        "errorRate": 0.16982758620689656,
+        "shareOfErrors": 0.7848605577689243
+      },
+      {
+        "decidedBy": "sampling",
+        "shipped": 310,
+        "errors": 22,
+        "errorRate": 0.07096774193548387,
+        "shareOfErrors": 0.08764940239043825
+      },
+      {
+        "decidedBy": "critic",
+        "shipped": 605,
+        "errors": 32,
+        "errorRate": 0.05289256198347107,
+        "shareOfErrors": 0.12749003984063745
+      }
+    ],
+    "shipped": 2075,
+    "errors": 251,
+    "recoverableByFullCoverage": 0.4861878453038674,
+    "criticRecall": 0.022099447513812154
+  },
+  "faultRecovery": [
+    {
+      "rate": 0.05,
+      "recovery": {
+        "injected": 114,
+        "unscored": 37,
+        "alreadyWrong": 8,
+        "surfaced": 46,
+        "repaired": 23,
+        "lost": 0,
+        "detectable": 69,
+        "accounted": true
+      }
+    },
+    {
+      "rate": 0.1,
+      "recovery": {
+        "injected": 232,
+        "unscored": 68,
+        "alreadyWrong": 19,
+        "surfaced": 89,
+        "repaired": 56,
+        "lost": 0,
+        "detectable": 145,
+        "accounted": true
+      }
+    },
+    {
+      "rate": 0.2,
+      "recovery": {
+        "injected": 511,
+        "unscored": 169,
+        "alreadyWrong": 52,
+        "surfaced": 157,
+        "repaired": 133,
+        "lost": 0,
+        "detectable": 290,
+        "accounted": true
+      }
+    }
+  ]
+}
